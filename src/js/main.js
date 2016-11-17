@@ -2,8 +2,8 @@ import angular from 'angular';
 
 import{ routerConfig } from './routes';
 import{ HomeController } from './controllers/home';
-import{ AddImgController } from './controllers/addImg';
-import{ DetailsController } from './controllers/details';
+import{ AddImgController } from './controllers/add';
+import{ DetailsController } from './controllers/single';
 
 import 'angular-ui-router';
 
