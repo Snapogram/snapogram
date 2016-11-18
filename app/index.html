@@ -1,15 +1,20 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cool Project</title>
+    <title>Snapogram</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
-  <body>
+  <body ng-app="app">
     <div class="container">
-      <p>Welcome to your life.</p>
+      <nav>
+        <a href="#/">Home </a>
+        <a href="#/">About Us </a>
+        <a href="#/">Add a Pic </a>
+      </nav>
+      <div class="main-content" ui-view></div>
     </div>
     <script src="js/bundle.js"></script>
   </body>
