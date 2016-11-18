@@ -1,6 +1,6 @@
 import { SERVER } from "../server";
 
-function AddImgController ($scope, $http) {
+function AddImgController ($scope, $http, $state) {
 
 }
 
@@ -9,5 +9,5 @@ function AddImgController ($scope, $http) {
 
 
 
-AddImgController.$inject = ['$scope', '$http'];
+AddImgController.$inject = ['$scope', '$http', '$state'];
 export { AddImgController };
