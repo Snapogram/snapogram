@@ -3,7 +3,8 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
 	$stateProvider
 		.state('home',{
 			url:'/',
-			templateUrl: 'templates/home.tpi.html'
+			templateUrl: 'templates/home.tpi.html',
+			controller: 'HomeController'
 		})
 		.state('about', {
 	         url: '/about',
@@ -11,7 +12,8 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
    		 })
 		.state('addImg',{
 			url: '/addImg',
-			templateUrl: 'templates/add.tpi.html'		
+			templateUrl: 'templates/add.tpi.html',
+			controller: 'AddImgController'		
 		})
 
 		 $urlRouterProvider.otherwise('/');

@@ -1,7 +1,7 @@
 import angular from 'angular';
 
 import{ routerConfig } from './routes';
-import{ HomeController } from './controllers/home';
+import { HomeController } from './controllers/home';
 import{ AddImgController } from './controllers/add';
 import{ DetailsController } from './controllers/single';
 

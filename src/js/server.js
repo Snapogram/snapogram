@@ -1,3 +1,3 @@
-const SERVER = 'https://class-server.herokuapp.com/collections/Snapogram/';
+const SERVER = 'https://shrouded-gorge-47076.herokuapp.com/';
 
 export { SERVER };
