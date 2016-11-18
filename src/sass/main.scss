@@ -1,1 +1,22 @@
 @import "bulma";
+
+.card {
+    height: 219px;
+    width: 300px;
+    margin: 0 15px 15px 0;
+   	float: left;
+    overflow: auto;
+}
+
+img{
+	width: 275%;
+    height: 200px;
+    
+    &:after {
+                position: absolute;
+                content: attr(data-t);
+                width: 100%;
+                left: 0;
+                bottom: 1px;
+            }
+}
