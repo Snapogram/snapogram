@@ -3,9 +3,10 @@ import { SERVER } from "../server";
 function AddImgController ($scope, $http, $state) {
 
 	 $scope.addPic = (pic) => {
-    $http.post(SERVER, pic).then((resp) => {
-      $state.go('home');
-    });
+	 	console.log('something')
+	    $http.post(SERVER + 'images', pic).then((resp) => {
+	      $state.go('home');
+	    });
   };
 
 };
