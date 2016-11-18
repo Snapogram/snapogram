@@ -13,6 +13,8 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
 			url: '/addImg',
 			templateUrl: 'templates/add.tpi.html'		
 		})
+
+		 $urlRouterProvider.otherwise('/');
 }
 
 
