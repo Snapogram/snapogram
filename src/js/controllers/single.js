@@ -12,6 +12,12 @@ function DetailsController ($scope, $http, $stateParams, $document) {
 
   init();
 
+  $scope.addLike = (pic) => {
+    let url = SERVER + 'images/' + $stateParams.id;
+
+    img.likes++;
+    $http.put(url);
+  };
 }
 
 DetailsController.$inject = ['$scope', '$http', '$stateParams', '$document'];
