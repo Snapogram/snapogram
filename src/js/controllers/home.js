@@ -16,7 +16,6 @@ function HomeController ($scope, $http) {
 
     pic.likes++;
     $http.put(url, pic);
-    console.log(pic.likes, pic);
   };
 };
 
