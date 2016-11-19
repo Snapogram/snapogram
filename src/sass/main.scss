@@ -1,7 +1,7 @@
 @import "bulma";
 
 .card {
-    height: 219px;
+    height: 255px;
     width: 300px;
     margin: 0 15px 15px 0;
    	float: left;
@@ -10,7 +10,7 @@
 
 img{
 	width: 275%;
-    height: 200px;
+    height: 215px;
     
     &:after {
                 position: absolute;
@@ -20,9 +20,23 @@ img{
                 bottom: 1px;
                 opacity: 0;
             }
-}
+};
 
-h1{
+h1 {
     display: flex;
     justify-content: center;
+};
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 33px;
+};
+
+a {
+    margin-left: inherit;
+};
+
+.red{
+    color: red;
 }
