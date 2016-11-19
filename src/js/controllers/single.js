@@ -17,6 +17,11 @@ function DetailsController ($scope, $http, $stateParams, $document) {
 
     img.likes++;
     $http.put(url);
+
+    $document.find('div').eq(1).addClass('likeModal');
+      setTimeout(() => {
+        $document.find('div').eq(1).removeClass('likeModal');
+      }, 500);
   };
 }
 
