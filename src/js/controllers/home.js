@@ -10,6 +10,13 @@ function HomeController ($scope, $http, $state) {
   }
 
   init();
+
+  $scope.addLike = (pic) => {
+    let url = SERVER + 'images/' + $stateParams.id;
+
+    img.likes++;
+    $http.put(url);
+  };
 };
 
 HomeController.$inject = ['$scope', '$http', '$state'];
