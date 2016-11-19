@@ -1,6 +1,6 @@
 import { SERVER } from "../server";
 
-function HomeController ($scope, $http, $state) {
+function HomeController ($scope, $http) {
   $scope.myPics= [];
 
   function init () {
@@ -12,13 +12,14 @@ function HomeController ($scope, $http, $state) {
   init();
 
   $scope.addLike = (pic) => {
-    let url = SERVER + 'images/' + $stateParams.id;
+    let url = SERVER + 'images/' + pic.id;
 
-    img.likes++;
-    $http.put(url);
+    pic.likes++;
+    $http.put(url, pic);
+    console.log(pic.likes, pic);
   };
 };
 
-HomeController.$inject = ['$scope', '$http', '$state'];
+HomeController.$inject = ['$scope', '$http'];
 
 export {HomeController}
