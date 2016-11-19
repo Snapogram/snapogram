@@ -1,7 +1,11 @@
 <div class="card">
   <h3>{{ pic.caption }}</h3>
-  <img ng-src="{{ pic.url }}" />
-  <p>
-    {{ pic.description }}
-  </p>
+  	<div class="likeModal" ng-dblclick="addLike(pic)" ">
+  		
+  	</div>
+	  <img ng-src="{{ pic.url }}" />
+	  <p>
+	  	<i class="fa fa-heart" aria-hidden="true"></i>
+	    {{ pic.description }}
+	  </p>
 </div>
