@@ -18,5 +18,11 @@ img{
                 width: 100%;
                 left: 0;
                 bottom: 1px;
+                opacity: 0;
             }
+}
+
+h1{
+    display: flex;
+    justify-content: center;
 }
