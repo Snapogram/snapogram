@@ -20,9 +20,19 @@ img{
                 bottom: 1px;
                 opacity: 0;
             }
-}
+};
 
-h1{
+h1 {
     display: flex;
     justify-content: center;
-}
+};
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 33px;
+};
+
+a {
+    margin-left: inherit;
+};
