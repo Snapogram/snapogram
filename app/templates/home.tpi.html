@@ -2,18 +2,17 @@
 <ul class="myPics">
   <li ng-repeat="pic in myPics">
 
-    <a href="#/pic/{{ pic.id }}">
-
       <div class="card">
-        <h3>{{ pic.caption }}</h3>
-
-        <img ng-src="{{ pic.url }}" title="{{ pic.description }}" data-t="{{ pic.caption }}" />
-    </a>    
+        <a href="#/pic/{{ pic.id }}">
+          <img ng-src="{{ pic.url }}" title="{{ pic.description }}" data-t="{{ pic.caption }}" />
+        </a>
         <div class="heart" ng-click="addLike(pic)">
-        	<i class="fa fa-heart red" aria-hidden="true"></i>
-        	{{pic.likes}}
+        	<i class="fa fa-heart red" aria-hidden="true">
+            {{pic.likes}}
+          </i>
+          <h3>{{ pic.caption }}</h3>
         </div>
-        
+
       </div>
   </li>
 </ul>
