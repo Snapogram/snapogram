@@ -16,13 +16,13 @@ function DetailsController ($scope, $http, $stateParams, $document) {
     let url = SERVER + 'images/' + $stateParams.id;
 
     pic.likes++;
-    $http.put(url);
-    console.log(url);
+    $http.put(url,pic)
 
-    $document.find('div').eq(1).addClass('like');
-      setTimeout(() => {
-        $document.find('div').eq(1).removeClass('like');
-      }, 500);
+    console.log($document.find('div').eq(3));
+    $document.find('div').eq(3).addClass('like');
+    setTimeout(() => {
+        $document.find('div').eq(3).removeClass('like');
+    }, 1000);
   };
 }
 
