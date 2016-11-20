@@ -15,7 +15,7 @@ function DetailsController ($scope, $http, $stateParams, $document) {
   $scope.addLike = (pic) => {
     let url = SERVER + 'images/' + $stateParams.id;
 
-    img.likes++;
+    pic.likes++;
     $http.put(url);
 
     $document.find('div').eq(1).addClass('likeModal');
