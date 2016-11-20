@@ -1,9 +1,9 @@
 <div class="card">
   <h3>{{ pic.caption }}</h3>
-  	<div class="likeModal"  style="background: url({{ pic.url }}) center/cover no-repeat;" ng-dblclick="addLike(pic)">
+  	<div class="likeModal" ng-dblclick="addLike(pic)">
   		<i class="fa fa-heart" aria-hidden="true"></i>
   	</div>
-	  <img ng-src="{{ pic.url }}" />
+	  <img ng-dblclick="addLike(pic)" ng-src="{{ pic.url }}" />
 
 	  <p>
 	  	<i class="fa fa-heart" aria-hidden="true"></i>
