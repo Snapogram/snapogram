@@ -7,18 +7,29 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Prociono" rel="stylesheet">
   </head>
   <body ng-app="app">
     <div class="container">
-      <h1 class="title">Snapogram</h1>
+      <img class="logo" src="./images/snapogrambackgd.png">
       <img id="logo" src="images/oldiecamera.png">
       <nav>
-        <a href="#/">Home </a>
-        <a href="#/about">About Us </a>
-        <a href="#/addImg">Add a Pic </a>
+        <ul id="navbar">
+          <li><a class="active" href="#/">Home</a></li>
+          <li><a href="#/about">About Us</a></li>
+          <li><a href="#/addImg">Add a Pic</a></li>
+        </ul>
       </nav>
       <div class="main-content" ui-view></div>
     </div>
+    <footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        <strong>SnapOgram</strong> | &copy 2016
+    </div>
+  </div>
+</footer>
 
     <script src="js/bundle.js"></script>
   </body>
