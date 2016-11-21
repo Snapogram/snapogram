@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card details">
   <h3>{{ pic.caption }}</h3>
   	<div class="likeModal" ng-dblclick="addLike(pic)">
   		<i class="fa fa-heart " aria-hidden="true"></i>
@@ -7,6 +7,6 @@
 
 	  <p>
 	  	<i class="fa fa-heart red" aria-hidden="true"> {{pic.likes}}</i>
-	    {{ pic.description }} 
+	    <h3>{{ pic.description }}</h3>
 	  </p>
 </div>
